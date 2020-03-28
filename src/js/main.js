@@ -84,7 +84,7 @@ $(async () => {
       formatter: (val) => numeral(val).format("0,0"),
       footerFormatter: (data) => numeral(totalNum(data, "confirmed")).format("0,0"),
     }, {
-      title: "Confirmed Ratio", field: "confirmedRate", width: 100, align: "right", sortable: true,
+      title: "Confirmed Rate (%)", field: "confirmedRate", width: 100, align: "right", sortable: true,
       formatter: (val, row) => row.population ? numeral(val*10000).format("0,0.000") : "---",
       footerFormatter: (data) => numeral(totalRate(data, "confirmed", "population")*10000).format("0,0.000"),
     }, {
@@ -92,7 +92,7 @@ $(async () => {
       formatter: (val) => numeral(val).format("0,0"),
       footerFormatter: (data) => numeral(totalNum(data, "death")).format("0,0"),
     }, {
-      title: "Death Ratio", field: "deathRate", width: 100, align: "right", sortable: true,
+      title: "Death Rate (%)", field: "deathRate", width: 100, align: "right", sortable: true,
       formatter: (val) => numeral(val).format("0.000%"),
       footerFormatter: (data) => numeral(totalRate(data, "death", "confirmed")).format("0.000%"),
     }, {
@@ -100,7 +100,7 @@ $(async () => {
       formatter: (val) => numeral(val).format("0,0"),
       footerFormatter: (data) => numeral(totalNum(data, "recovered")).format("0,0"),
     }, {
-      title: "Recovery Ratio", field: "recoveredRate", width: 100, align: "right", sortable: true,
+      title: "Recovery Rate (%)", field: "recoveredRate", width: 100, align: "right", sortable: true,
       formatter: (val) => numeral(val).format("0.000%"),
       footerFormatter: (data) => numeral(totalRate(data, "recovered", "confirmed")).format("0.000%"),
     }, {
