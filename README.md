@@ -1,7 +1,7 @@
 # COVID-19 Global Cases and Statistics
 maintained by: `hkdb`
 
-![COVID-19 Global Cases and Statics](COVID-19-Table.png)
+![COVID-19 Global Cases and Statics](covid19ss.png)
 
 ### Summary:
 

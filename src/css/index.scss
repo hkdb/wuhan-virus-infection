@@ -8,6 +8,25 @@ body {
   align-items: center;
   font-family: "Courier New", Helvetica, Arial;
   width: 100%;
+  margin: 0;
+}
+
+@media screen and (min-width: 360px) and (max-width: 540px) {
+  body {
+      width: 300%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1400px) {
+  body {
+      width: 200%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+      width: 100%;
+  }
 }
 
 .table-container {
